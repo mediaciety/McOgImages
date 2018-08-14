@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="mc_og_images.subscriber.template_subscriber" class="McOgImages\Subscriber\TemplateSubscriber">
+            <argument>%mc_og_images.plugin_dir%</argument>
+            <argument type="service" id="template"/>
+            <tag name="shopware.event_subscriber" />
+        </service>
+        <service id="mc_og_images.commands.og_article" class="McOgImages\Commands\OgArticle">
+            <tag name="console.command" />
+        </service>
+    </services>
+
+</container>

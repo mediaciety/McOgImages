@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.4/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element required="false" type="mediaselection" scope="locale">
+            <name>ogImageBackgroundFile</name>
+            <label lang="de">Hintergrundbild</label>
+            <value></value>
+            <description lang="de">Hintergrund für OG:Images, wenn leer ist der Hintergrund vollflächig weiß!</description>
+        </element>
+        <element required="false" type="text" scope="locale">
+            <name>ogImageSize</name>
+            <label lang="de">Größe (px - W x H)</label>
+            <value>1500x1500</value>
+            <description lang="de">Bildgröße des OG:Images</description>
+        </element>
+        <element required="true" type="text" scope="locale">
+            <name>ogBackgroundBlur</name>
+            <label lang="de">Blur-Effekt (Performancelastig!)</label>
+            <value>0</value>
+            <description lang="de">Stärke des Blur-Effekts auf des Hintergrundbild. (0 = kein, 100 = max)</description>
+        </element>
+        <element required="true" type="mediaselection" scope="locale">
+            <name>ogDefaultImage</name>
+            <label lang="de">Standard OG:Image</label>
+            <value></value>
+            <description lang="de">Standardbild, wenn keins angegeben oder generiert wurde</description>
+        </element>
+        <element required="true" type="mediaselection" scope="locale">
+            <name>ogDefaultImage</name>
+            <label lang="de">Standard OG:Image</label>
+            <value></value>
+            <description lang="de">Standardbild, wenn keins angegeben oder generiert wurde</description>
+        </element>
+        <element required="true" type="text" scope="locale">
+        <name>fbAppId</name>
+        <label lang="de">Facebook APP ID</label>
+        <value></value>
+        <description lang="de"></description>
+    </element>
+    </elements>
+</config>
